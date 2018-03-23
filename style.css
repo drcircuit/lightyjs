@@ -1,0 +1,14 @@
+#logo{
+    width: 150px;
+    image-rendering: crisp-edges;
+    float: left;
+    padding-right: 20px;
+}
+
+body{
+    font-family: "Source Sans Pro";
+}
+
+h1,h2{
+    line-height: 30px;
+}
