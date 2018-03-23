@@ -29,3 +29,28 @@ to become
 ```
 then look at this example, you can make that happen 
 in just a few lines of code. No need to bring in a cannon like AngularJS just to do that.
+
+All you need to do is make a template like this:
+
+```html
+<div lc="articleController">
+  <h1>[title]</h1>          <!-- You can use [key name] -->
+  <h2 lb="subtitle"></h2>   <!-- You can also use the "lb" attribute which stands for lighty-bind -->
+  <img limg="articleimage"> <!-- Images use the "limg" attribute -->
+</div>
+```
+
+Then you write your app as such:
+```javascript
+lighty()
+   .controller("articleController", function(){
+      // The controller fetches and processes the data, and returns a model object containing the properties used in the view
+      
+      return {
+        title: "The Title",
+        subtitle: "The Subtitle",
+        articleimage: "logo.png"
+      };
+   })
+   .render(); // You may chain as many controllers as you like, once you call "render" all views are rendered.
+```
