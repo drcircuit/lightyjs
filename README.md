@@ -19,5 +19,13 @@ conditionals and so on. Doing this yourself also teaches you how these problems 
 critical stuff happens, and what and where to optimize. It may also give you better insight into some of the frameworks
 you might be using. 
 
-If all you want to do is <div>{{key}}</div> to become <div>Roses</div> then look at this example, you can make that happen 
+If all you want to do is:
+```html
+<div>{{key}}</div>
+```
+to become 
+```html
+<div>Roses</div> 
+```
+then look at this example, you can make that happen 
 in just a few lines of code. No need to bring in a cannon like AngularJS just to do that.
